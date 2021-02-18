@@ -1,8 +1,8 @@
 <h1>id: <%= @task.id %>のタスク編集ページ</h1>
 
 <%= from_with(model: @task, local: ture) do |f| %>
-  <%= f.labe; :content, "タスク" %>
-  <%= f.text_field; :content %>
+  <%= f.label :content, "タスク" %>
+  <%= f.text_field :content %>
   
   <%= f.submit "完了" %>
 <& end %>
