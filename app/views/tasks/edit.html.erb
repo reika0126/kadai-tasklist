@@ -2,7 +2,7 @@
 
 <%= from_with(model: @task, local: ture) do |f| %>
   <%= f.labe; :content, "タスク" %>
-  <%= f.text_field :content %>
+  <%= f.text_field; :content %>
   
   <%= f.submit "完了" %>
 <& end %>
