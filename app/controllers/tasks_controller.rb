@@ -15,7 +15,7 @@ class TasksController < ApplicationController
         @task = Task.new(task_params)
         
         if @task.save
-            flash[:success] = "Taskが正常に完了されました"
+            flash[:type] = "Taskが正常に完了されました"
             redirect_to @task
         else
             flash.now[:danger] = "Taskが完了されませんでした"
@@ -45,6 +45,7 @@ class TasksController < ApplicationController
         
         flash[:success] = "Taskは正常に削除されました"
         redirect_to task_url
+    end
     end
     
     private
