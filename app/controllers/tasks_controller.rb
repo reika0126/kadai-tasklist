@@ -36,7 +36,7 @@ class TasksController < ApplicationController
         end
     end
     
-    def destory
+    def destroy
         @task.destroy
         
         flash[:success] = "Taskは正常に削除されました"
